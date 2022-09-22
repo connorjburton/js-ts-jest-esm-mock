@@ -5,7 +5,6 @@ jest.unstable_mockModule("node:child_process", () => ({
   execSync: jest.fn(() => "some-mocked-value"),
 }));
 
-// these can be in any order
 const index = await import("./index");
 const { execSync } = await import("node:child_process");
 
