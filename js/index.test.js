@@ -1,5 +1,6 @@
 import { jest } from "@jest/globals";
 
+// this has to be above the `await import`s
 jest.unstable_mockModule("node:child_process", () => ({
   execSync: jest.fn(() => "some-mocked-value"),
 }));
