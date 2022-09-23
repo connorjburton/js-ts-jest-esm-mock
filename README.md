@@ -4,3 +4,7 @@ This repository is a demonstration on how to use [ESM mocks in Jest](https://jes
 
 - `yarn test:js`
 - `yarn test:ts`
+
+## Notes
+
+- To reset your mocks between tests, use `jest.resetModules()`
